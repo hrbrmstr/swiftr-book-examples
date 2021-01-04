@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01872DBF259FA39000E9CE7B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01872DBE259FA39000E9CE7B /* main.swift */; };
+		01872DC9259FA4FE00E9CE7B /* swift-r-bridge.c in Sources */ = {isa = PBXBuildFile; fileRef = 01872DC8259FA4FE00E9CE7B /* swift-r-bridge.c */; };
+		01872DCD259FA7C900E9CE7B /* R.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01872DCC259FA7C900E9CE7B /* R.framework */; };
+		01872DD3259FAAC600E9CE7B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 01872DD2259FAAC600E9CE7B /* libc++.tbd */; };
+		019D823825A226F3000C238F /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 019D823725A226F3000C238F /* ArgumentParser */; };
+		01C2F53425A0A221004700C8 /* r-utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C2F53325A0A221004700C8 /* r-utils.swift */; };
+		01C2F53725A0D818004700C8 /* sexp-utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C2F53625A0D818004700C8 /* sexp-utils.swift */; };
+		01C2F54625A1D83E004700C8 /* sunriseset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C2F54525A1D83E004700C8 /* sunriseset.swift */; };
+		01C2F54925A1FADD004700C8 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C2F54825A1FADD004700C8 /* utils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01872DB9259FA38F00E9CE7B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0135020225A341A3001ABA4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01872DBB259FA38F00E9CE7B /* ephemerids */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ephemerids; sourceTree = BUILT_PRODUCTS_DIR; };
+		01872DBE259FA39000E9CE7B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		01872DC6259FA4FE00E9CE7B /* ephemerids-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ephemerids-Bridging-Header.h"; sourceTree = "<group>"; };
+		01872DC7259FA4FE00E9CE7B /* swift-r-bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-r-bridge.h"; sourceTree = "<group>"; };
+		01872DC8259FA4FE00E9CE7B /* swift-r-bridge.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "swift-r-bridge.c"; sourceTree = "<group>"; };
+		01872DCC259FA7C900E9CE7B /* R.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = R.framework; path = ../../../../Library/Frameworks/R.framework; sourceTree = "<group>"; };
+		01872DD2259FAAC600E9CE7B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		01C2F53325A0A221004700C8 /* r-utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "r-utils.swift"; sourceTree = "<group>"; };
+		01C2F53625A0D818004700C8 /* sexp-utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "sexp-utils.swift"; sourceTree = "<group>"; };
+		01C2F53925A0DB5C004700C8 /* ephemerids.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ephemerids.entitlements; sourceTree = "<group>"; };
+		01C2F54525A1D83E004700C8 /* sunriseset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sunriseset.swift; sourceTree = "<group>"; };
+		01C2F54825A1FADD004700C8 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01872DB8259FA38F00E9CE7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019D823825A226F3000C238F /* ArgumentParser in Frameworks */,
+				01872DD3259FAAC600E9CE7B /* libc++.tbd in Frameworks */,
+				01872DCD259FA7C900E9CE7B /* R.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01872DB2259FA38F00E9CE7B = {
+			isa = PBXGroup;
+			children = (
+				01872DBD259FA39000E9CE7B /* ephemerids */,
+				01872DBC259FA38F00E9CE7B /* Products */,
+				01872DCB259FA7C900E9CE7B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		01872DBC259FA38F00E9CE7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01872DBB259FA38F00E9CE7B /* ephemerids */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01872DBD259FA39000E9CE7B /* ephemerids */ = {
+			isa = PBXGroup;
+			children = (
+				01C2F53925A0DB5C004700C8 /* ephemerids.entitlements */,
+				01872DBE259FA39000E9CE7B /* main.swift */,
+				01C2F53325A0A221004700C8 /* r-utils.swift */,
+				01C2F54525A1D83E004700C8 /* sunriseset.swift */,
+				01C2F53625A0D818004700C8 /* sexp-utils.swift */,
+				01C2F54825A1FADD004700C8 /* utils.swift */,
+				01872DC7259FA4FE00E9CE7B /* swift-r-bridge.h */,
+				01872DC8259FA4FE00E9CE7B /* swift-r-bridge.c */,
+				01872DC6259FA4FE00E9CE7B /* ephemerids-Bridging-Header.h */,
+				0135020225A341A3001ABA4A /* Info.plist */,
+			);
+			path = ephemerids;
+			sourceTree = "<group>";
+		};
+		01872DCB259FA7C900E9CE7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01872DD2259FAAC600E9CE7B /* libc++.tbd */,
+				01872DCC259FA7C900E9CE7B /* R.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01872DBA259FA38F00E9CE7B /* ephemerids */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01872DC2259FA39000E9CE7B /* Build configuration list for PBXNativeTarget "ephemerids" */;
+			buildPhases = (
+				01872DB7259FA38F00E9CE7B /* Sources */,
+				01872DB8259FA38F00E9CE7B /* Frameworks */,
+				01872DB9259FA38F00E9CE7B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ephemerids;
+			packageProductDependencies = (
+				019D823725A226F3000C238F /* ArgumentParser */,
+			);
+			productName = secondr;
+			productReference = 01872DBB259FA38F00E9CE7B /* ephemerids */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01872DB3259FA38F00E9CE7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					01872DBA259FA38F00E9CE7B = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
+				};
+			};
+			buildConfigurationList = 01872DB6259FA38F00E9CE7B /* Build configuration list for PBXProject "ephemerids" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01872DB2259FA38F00E9CE7B;
+			packageReferences = (
+				019D823625A226F3000C238F /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
+			productRefGroup = 01872DBC259FA38F00E9CE7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01872DBA259FA38F00E9CE7B /* ephemerids */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01872DB7259FA38F00E9CE7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01C2F54625A1D83E004700C8 /* sunriseset.swift in Sources */,
+				01872DBF259FA39000E9CE7B /* main.swift in Sources */,
+				01872DC9259FA4FE00E9CE7B /* swift-r-bridge.c in Sources */,
+				01C2F54925A1FADD004700C8 /* utils.swift in Sources */,
+				01C2F53425A0A221004700C8 /* r-utils.swift in Sources */,
+				01C2F53725A0D818004700C8 /* sexp-utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		01872DC0259FA39000E9CE7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "/Users/hrbrmstr/book-examples/ephemerids-3/ephemerids/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				"TARGETED_DEVICE_FAMILY[sdk=macosx*]" = "";
+			};
+			name = Debug;
+		};
+		01872DC1259FA39000E9CE7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "/Users/hrbrmstr/book-examples/ephemerids-3/ephemerids/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				"TARGETED_DEVICE_FAMILY[sdk=macosx*]" = "";
+			};
+			name = Release;
+		};
+		01872DC3259FA39000E9CE7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ephemerids/ephemerids.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CBY22P58G8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = is.rud.ephemerids;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ephemerids/ephemerids-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "/Library/Frameworks/R.framework/Headers/**";
+			};
+			name = Debug;
+		};
+		01872DC4259FA39000E9CE7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ephemerids/ephemerids.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CBY22P58G8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = is.rud.ephemerids;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ephemerids/ephemerids-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "/Library/Frameworks/R.framework/Headers/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01872DB6259FA38F00E9CE7B /* Build configuration list for PBXProject "ephemerids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01872DC0259FA39000E9CE7B /* Debug */,
+				01872DC1259FA39000E9CE7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01872DC2259FA39000E9CE7B /* Build configuration list for PBXNativeTarget "ephemerids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01872DC3259FA39000E9CE7B /* Debug */,
+				01872DC4259FA39000E9CE7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		019D823625A226F3000C238F /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		019D823725A226F3000C238F /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 019D823625A226F3000C238F /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 01872DB3259FA38F00E9CE7B /* Project object */;
+}
