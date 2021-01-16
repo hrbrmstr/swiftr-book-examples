@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010ADB5325A5FE41008046CE /* R.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01872DCC259FA7C900E9CE7B /* R.framework */; };
+		010ADB5425A5FE41008046CE /* R.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 01872DCC259FA7C900E9CE7B /* R.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		01872DBF259FA39000E9CE7B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01872DBE259FA39000E9CE7B /* main.swift */; };
 		01872DC9259FA4FE00E9CE7B /* swift-r-bridge.c in Sources */ = {isa = PBXBuildFile; fileRef = 01872DC8259FA4FE00E9CE7B /* swift-r-bridge.c */; };
-		01872DCD259FA7C900E9CE7B /* R.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01872DCC259FA7C900E9CE7B /* R.framework */; };
 		01872DD3259FAAC600E9CE7B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 01872DD2259FAAC600E9CE7B /* libc++.tbd */; };
 		019D823825A226F3000C238F /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 019D823725A226F3000C238F /* ArgumentParser */; };
 		01C2F53425A0A221004700C8 /* r-utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C2F53325A0A221004700C8 /* r-utils.swift */; };
@@ -19,6 +20,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		010ADB5525A5FE41008046CE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				010ADB5425A5FE41008046CE /* R.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01872DB9259FA38F00E9CE7B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,9 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				010ADB5325A5FE41008046CE /* R.framework in Frameworks */,
 				019D823825A226F3000C238F /* ArgumentParser in Frameworks */,
 				01872DD3259FAAC600E9CE7B /* libc++.tbd in Frameworks */,
-				01872DCD259FA7C900E9CE7B /* R.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +125,7 @@
 				01872DB7259FA38F00E9CE7B /* Sources */,
 				01872DB8259FA38F00E9CE7B /* Frameworks */,
 				01872DB9259FA38F00E9CE7B /* CopyFiles */,
+				010ADB5525A5FE41008046CE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,6 +325,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(USER_LIBRARY_DIR)/Frameworks",
 				);
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -339,6 +353,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(USER_LIBRARY_DIR)/Frameworks",
 				);
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
