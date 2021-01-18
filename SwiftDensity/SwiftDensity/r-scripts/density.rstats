@@ -1,0 +1,41 @@
+suppressMessages(suppressWarnings(tryCatch({
+
+	set.seed(Sys.Date())
+
+  # make the plot
+  
+  ggplot() +
+  stat_density(
+  	aes(x),
+  	bw = bw,
+  	kernel = kernel,
+  	geom = "line"
+  ) +
+  geom_point(
+  	aes(x, rep(0, length(x))), alpha = 1/4
+  ) +
+  scale_x_continuous(limits = range(x) + c(-2, 2)) +
+  labs(
+  	title = sprintf("Kernel: %s", kernel),
+  	x = sprintf("N = %s • Bandwidth = %s", length(x), round(bw, digits = bw_digits)),
+  	y = "Density"
+  ) +
+  theme_ipsum_gs(grid="XY") +
+  theme(plot.margin = margin(6, 6, 6, 6, unit = "pt")) -> gg
+  
+  # start some magick
+  
+  image_graph(
+  	width = plot_width * 2,
+  	height = plot_height * 2,
+  	pointsize = 12,
+  	res = 144
+  ) -> plt
+  
+  # incant it
+  
+  print(gg)
+  dev.off()
+  image_write(plt, path = NULL, format = "jpeg") # no file round trip
+  
+})))
